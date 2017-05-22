@@ -1,0 +1,293 @@
+{
+	"label": "trump",
+	"image_directory": "images",
+	"videos": [
+		{
+			"path": "videos/1_CSPAN_20170404_232100_President_Trump_We_are_Absolutely_Destroying_These_Horrible_Regulations.mp4",
+			"segments": [
+				{
+					"start": "0:0",
+					"end": "0:16",
+					"is_positive": false,
+					"tags": []
+				},
+				{
+					"start": "0:17",
+					"end": "0:34",
+					"is_positive": true,
+					"tags": ["picture"]
+				},
+				{
+					"start": "0:35",
+					"end": "7:26",
+					"is_positive": false,
+					"tags": []
+				},
+				{
+					"start": "7:28",
+					"end": "7:48",
+					"is_positive": true,
+					"tags": ["poor"]
+				},
+				{
+					"start": "7:49",
+					"end": "31:23",
+					"is_positive": true,
+					"tags": []
+				},
+				{
+					"start": "31:24",
+					"end": "31:26",
+					"is_positive": true,
+					"tags": ["poor"]
+				},
+				{
+					"start": "31:27",
+					"end": "32:01",
+					"is_positive": false,
+					"tags": []
+				}
+			]
+		},
+		{
+
+			"path": "videos/2_KPIX_20161114_030000_60_Minutes.mp4",
+			"segments": [
+				{
+					"start": "0:00",
+					"end": "0:12",
+					"is_positive": false,
+					"tags": []
+				},
+				{
+					"start": "0:13",
+					"end": "0:39",
+					"is_positive": true,
+					"tags": []
+				},
+				{
+					"start": "0:40",
+					"end": "0:44",
+					"is_positive": false,
+					"tags": []
+				},
+				{
+					"start": "0:45",
+					"end": "0:46",
+					"is_positive": true,
+					"tags": []
+				},
+				{
+					"start": "0:47",
+					"end": "0:55",
+					"is_positive": false,
+					"tags": []
+				},
+				{
+					"start": "0:56",
+					"end": "0:59",
+					"is_positive": true,
+					"tags": []
+				},
+				{
+					"start": "1:00",
+					"end": "1:03",
+					"is_positive": false,
+					"tags": []
+				},
+				{
+					"start": "1:04",
+					"end": "1:14",
+					"is_positive": true,
+					"tags": []
+				},
+				{
+					"start": "1:15",
+					"end": "4:57",
+					"is_positive": false,
+					"tags": []
+				},
+				{
+					"start": "4:58",
+					"end": "5:55",
+					"is_positive": true,
+					"tags": ["picture"]
+				},
+				{
+					"start": "5:56",
+					"end": "8:07",
+					"is_positive": true,
+					"tags": []
+				},
+				{
+					"start": "8:08",
+					"end": "8:12",
+					"is_positive": false,
+					"tags": []
+				},
+				{
+					"start": "8:13",
+					"end": "8:52",
+					"is_positive": true,
+					"tags": []
+				},
+				{
+					"start": "8:53",
+					"end": "8:54",
+					"is_positive": false,
+					"tags": []
+				},
+				{
+					"start": "8:55",
+					"end": "9:23",
+					"is_positive": true,
+					"tags": []
+				},
+				{
+					"start": "9:24",
+					"end": "9:25",
+					"is_positive": false,
+					"tags": []
+				},
+				{
+					"start": "9:26",
+					"end": "10:04",
+					"is_positive": true,
+					"tags": []
+				},
+				{
+					"start": "10:05",
+					"end": "10:07",
+					"is_positive": false,
+					"tags": []
+				},
+				{
+					"start": "10:08",
+					"end": "10:17",
+					"is_positive": true,
+					"tags": []
+				},
+				{
+					"start": "10:18",
+					"end": "10:19",
+					"is_positive": false,
+					"tags": []
+				},
+				{
+					"start": "10:20",
+					"end": "10:28",
+					"is_positive": true,
+					"tags": []
+				},
+				{
+					"start": "10:29",
+					"end": "10:30",
+					"is_positive": false,
+					"tags": []
+				},
+				{
+					"start": "10:31",
+					"end": "12:08",
+					"is_positive": true,
+					"tags": []
+				},
+				{
+					"start": "12:09",
+					"end": "12:12",
+					"is_positive": false,
+					"tags": []
+				},
+				{
+					"start": "12:13",
+					"end": "12:58",
+					"is_positive": true,
+					"tags": []
+				},
+				{
+					"start": "12:59",
+					"end": "13:06",
+					"is_positive": false,
+					"tags": []
+				},
+				{
+					"start": "13:07",
+					"end": "13:38",
+					"is_positive": true,
+					"tags": []
+				},
+				{
+					"start": "13:39",
+					"end": "13:44",
+					"is_positive": false,
+					"tags": []
+				},
+				{
+					"start": "13:45",
+					"end": "14:00",
+					"is_positive": true,
+					"tags": []
+				},
+				{
+					"start": "14:01",
+					"end": "14:04",
+					"is_positive": false,
+					"tags": []
+				},
+				{
+					"start": "14:05",
+					"end": "14:08",
+					"is_positive": true,
+					"tags": []
+				},
+				{
+					"start": "14:09",
+					"end": "14:10",
+					"is_positive": false,
+					"tags": []
+				},
+				{
+					"start": "14:11",
+					"end": "14:12",
+					"is_positive": true,
+					"tags": []
+				},
+				{
+					"start": "14:13",
+					"end": "14:15",
+					"is_positive": false,
+					"tags": []
+				},
+				{
+					"start": "14:16",
+					"end": "14:27",
+					"is_positive": true,
+					"tags": []
+				},
+				{
+					"start": "14:28",
+					"end": "14:30",
+					"is_positive": false,
+					"tags": []
+				},
+				{
+					"start": "14:31",
+					"end": "15:19",
+					"is_positive": true,
+					"tags": []
+				},
+				{
+					"start": "15:20",
+					"end": "15:22",
+					"is_positive": false,
+					"tags": []
+				},
+				{
+					"start": "15:23",
+					"end": "15:33",
+					"is_positive": true,
+					"tags": []
+				}
+			]
+		}
+	]
+}
