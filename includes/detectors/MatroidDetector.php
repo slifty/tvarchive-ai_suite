@@ -19,7 +19,6 @@ class MatroidDetector extends AbstractDetector {
 
 		global $matroid_client_id;
 		global $matroid_client_secret;
-		global $matroid_access_token;
 		
 		$url = self::MATROID_BASE_API."/oauth/token";
 		$post = array(
@@ -36,7 +35,7 @@ class MatroidDetector extends AbstractDetector {
 		$result = json_decode(curl_exec($ch));
 		curl_close ($ch);
 
-		$this->oauth_token = $matroid_access_token;
+		$this->oauth_token = $result->access_token;
 		$this->oauth_token_expires = time() + $result->expires_in - 1000;
 		return $this->oauth_token;
 	}
@@ -166,8 +165,15 @@ class MatroidDetector extends AbstractDetector {
 		curl_setopt($ch, CURLOPT_POSTFIELDS, $post);
 		$response = curl_exec($ch);
 		$result = json_decode($response);
-		if(!$result)
+		if(!$result) {
 			print_r($response);
+			die();
+		}
+		if(!property_exists($result, 'video_id')) {
+			print_r($result);
+			die();
+		}
+
 		return $result->video_id;
 	}
 
@@ -177,6 +183,11 @@ class MatroidDetector extends AbstractDetector {
 
 		$progress = 0;
 		$url = self::MATROID_BASE_API."/videos/".$video_token;
+
+		echo($oauth_token);
+		echo("\n\r".self::MATROID_BASE_API."/videos/".$video_token);
+
+
 		while($progress != 100) {
 			$ch = curl_init();
 			curl_setopt($ch, CURLOPT_URL,$url);
@@ -186,10 +197,16 @@ class MatroidDetector extends AbstractDetector {
 			curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 			$response = curl_exec($ch);
 			$result = json_decode($response);
-			$progress = $result->classification_progress;
-			echo("\n\r".$progress."%");
-			sleep(5);
 			curl_close($ch);
+
+			if(property_exists($result, 'classification_progress')) {
+				$progress = $result->classification_progress;
+				echo("\n\r".$progress."%");
+				sleep(5);
+			} else {
+				print_r($result);
+				die();
+			}
 		}
 		return $result;
 	}

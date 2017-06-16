@@ -21,28 +21,8 @@
 			"path": "videos/2_KQED_20170125_060000_Frontline.mp4",
 			"segments": [
 				{
-					"start": "0:24",
-					"end": "0:26",
-					"is_positive": true
-				},
-				{
 					"start": "1:07",
 					"end": "1:11",
-					"is_positive": true
-				},
-				{
-					"start": "3:26",
-					"end": "3:28",
-					"is_positive": true
-				},
-				{
-					"start": "7:02",
-					"end": "7:03",
-					"is_positive": true
-				},
-				{
-					"start": "8:04",
-					"end": "8:07",
 					"is_positive": true
 				},
 				{
@@ -51,23 +31,13 @@
 					"is_positive": true
 				},
 				{
-					"start": "10:40",
-					"end": "10:41",
-					"is_positive": true
-				},
-				{
-					"start": "10:46",
-					"end": "10:56",
+					"start": "10:47",
+					"end": "10:54",
 					"is_positive": true
 				},
 				{
 					"start": "11:08",
 					"end": "11:15",
-					"is_positive": true
-				},
-				{
-					"start": "11:47",
-					"end": "11:48",
 					"is_positive": true
 				},
 				{
@@ -86,11 +56,6 @@
 					"is_positive": true
 				},
 				{
-					"start": "18:56",
-					"end": "18:57",
-					"is_positive": true
-				},
-				{
 					"start": "22:45",
 					"end": "22:48",
 					"is_positive": true
@@ -106,23 +71,13 @@
 					"is_positive": true
 				},
 				{
-					"start": "26:38",
-					"end": "27:02",
-					"is_positive": true
-				},
-				{
-					"start": "27:13",
+					"start": "27:17",
 					"end": "27:22",
 					"is_positive": true
 				},
 				{
-					"start": "27:43",
-					"end": "27:52",
-					"is_positive": true
-				},
-				{
 					"start": "28:05",
-					"end": "28:19",
+					"end": "28:18",
 					"is_positive": true
 				},
 				{
@@ -153,11 +108,6 @@
 				{
 					"start": "38:02",
 					"end": "38:17",
-					"is_positive": true
-				},
-				{
-					"start": "44:56",
-					"end": "45:13",
 					"is_positive": true
 				},
 				{

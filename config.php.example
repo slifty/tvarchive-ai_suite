@@ -4,9 +4,14 @@
 	global $matroid_client_id;
 	global $matroid_client_secret;
 	global $matroid_access_token;
+	global $user;
+	global $sig;
+	global $slack_handle;
 	$ffmpeg = "";
 	$matroid_client_id = "";
 	$matroid_client_secret = "";
-	$matroid_access_token = "";
+	$user = "";
+	$sig = "";
+	$slack_handle = "";
 
 ?>

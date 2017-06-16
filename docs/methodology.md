@@ -15,6 +15,9 @@ audio as well.
 - Each image or video clip must contain a single face looking at the camera.
 - A variety of backgrounds, lightings, and contexts are used.
 - The most important training data should appear first.
+- Images cannot have more than one head (including people facing away from the camera)
+- The face must not be obscured.
+- The face should be directly pointed at the camera, not rotated to the side.
 
 ### Open Questions
 - Are there merits to including a variety of video qualities?

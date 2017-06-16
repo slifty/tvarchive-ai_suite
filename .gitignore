@@ -3,3 +3,4 @@ config.php
 *.jpg
 *.jpeg
 *.csv
+out.list
