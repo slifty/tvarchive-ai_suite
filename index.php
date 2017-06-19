@@ -6,6 +6,13 @@
 	DataLoader::loadDetector("datasets/detectors/trump/detector.json", $matroid);
 	DataLoader::loadGold("datasets/gold/trump/gold.json", $matroid);
 
+
+	$fp = fopen('lock.txt', 'w+');
+	/* Activate the LOCK_NB option on an LOCK_EX operation */
+	if(!flock($fp, LOCK_EX | LOCK_NB)) {
+		exit(-1);
+	}
+
 	// $matroid->registerDetector();
 	// $matroid->trainDetector();
 	$matroid->setDetectorId("592f02fb2c796434707ae34e");
@@ -235,6 +242,6 @@
 	// }
 
 
-
+	fclose($fp);
 
 ?>
