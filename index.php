@@ -1,4 +1,6 @@
 <?php
+
+	define("ROOT", __DIR__ ."/");
 	include("includes/detectors/MatroidDetector.php");
 	include("includes/util/DataLoader.php");
 	$matroid = new MatroidDetector();
@@ -29,8 +31,9 @@
 	}
 
 	function split_video($path) {
+		global $ffmpeg;
 		$filesize = filesize($path);
-		$cmd = 'ffmpeg -i "'.$path.'" -acodec copy -f segment -segment_time 1200 -vcodec copy -reset_timestamps 1 -map 0 -segment_list out.list '.$path.'_OUTPUT%d.mp4';
+		$cmd = $ffmpeg.' -i "'.$path.'" -acodec copy -f segment -segment_time 1200 -vcodec copy -reset_timestamps 1 -map 0 -segment_list out.list '.$path.'_OUTPUT%d.mp4';
 		exec($cmd);
 		$output = file_get_contents('out.list');
 		$files = explode("\n", $output);
@@ -43,7 +46,8 @@
 	}
 
 	function get_duration($path) {
-		$cmd = 'ffprobe -i '.$path.' -show_entries format=duration -v quiet -of csv="p=0"';
+		global $ffprobe;
+		$cmd = $ffprobe.' -i '.$path.' -show_entries format=duration -v quiet -of csv="p=0"';
 		echo("\n\r".$cmd."\n\r");
 		exec($cmd, $output);
 		print_r($output[0]);
