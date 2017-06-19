@@ -3,8 +3,8 @@
 	include("includes/util/DataLoader.php");
 	$matroid = new MatroidDetector();
 
-	DataLoader::loadDetector("datasets/detectors/trump/detector.json", $matroid);
-	DataLoader::loadGold("datasets/gold/trump/gold.json", $matroid);
+	//DataLoader::loadDetector("datasets/detectors/trump/detector.json", $matroid);
+	//DataLoader::loadGold("datasets/gold/trump/gold.json", $matroid);
 
 
 	$fp = fopen('lock.txt', 'w+');
