@@ -8,6 +8,7 @@
 	global $user;
 	global $sig;
 	global $slack_handle;
+	global $current_detector_id;
 	$ffmpeg = "";
 	$ffprobe = "";
 	$matroid_client_id = "";
@@ -15,5 +16,6 @@
 	$user = "";
 	$sig = "";
 	$slack_handle = "";
+	$current_detector_id = "";
 
 ?>

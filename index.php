@@ -3,11 +3,7 @@
 	define("ROOT", __DIR__ ."/");
 	include("includes/detectors/MatroidDetector.php");
 	include("includes/util/DataLoader.php");
-	$matroid = new MatroidDetector();
-
-	//DataLoader::loadDetector("datasets/detectors/trump/detector.json", $matroid);
-	//DataLoader::loadGold("datasets/gold/trump/gold.json", $matroid);
-
+	
 
 	$fp = fopen('lock.txt', 'w+');
 	/* Activate the LOCK_NB option on an LOCK_EX operation */
@@ -15,9 +11,22 @@
 		exit(-1);
 	}
 
-	// $matroid->registerDetector();
-	// $matroid->trainDetector();
-	$matroid->setDetectorId("592f02fb2c796434707ae34e");
+	// Set up the detector
+	global $current_detector_id;
+	$matroid = new MatroidDetector();
+	if($current_detector_id != "") {
+		$matroid->setDetectorId($current_detector_id);
+	}
+	else {
+		echo("Training a detector");
+		DataLoader::loadDetector("datasets/detectors/pelosi/detector.json", $matroid);
+		DataLoader::loadDetector("datasets/detectors/trump/detector.json", $matroid);
+		DataLoader::loadDetector("datasets/detectors/mcconnell/detector.json", $matroid);
+		DataLoader::loadDetector("datasets/detectors/ryan/detector.json", $matroid);
+		DataLoader::loadDetector("datasets/detectors/schumer/detector.json", $matroid);
+		$matroid->registerDetector();
+		$matroid->trainDetector();
+	}
 
 	function get_archive_videos() {
 		$url = "http://archive.org/details/tv?weekshows&output=json";
@@ -94,10 +103,10 @@
 
 	function send_clips($archive_id, $clips) {
 		if(sizeof($clips) == 0){
-			$text = ":wastebasket: :wastebasket: :wastebasket: No Trump: ". $archive_id." :wastebasket: :wastebasket: :wastebasket:";
+			$text = ":wastebasket: :wastebasket: :wastebasket: No Pelosi: ". $archive_id." :wastebasket: :wastebasket: :wastebasket:";
 		}
 		else {
-			$text = ":rotating_light: :rotating_light: :rotating_light: TRUMP DETECTION ALERT :rotating_light: :rotating_light: :rotating_light:";
+			$text = ":rotating_light: :rotating_light: :rotating_light: PELOSI DETECTION ALERT :rotating_light: :rotating_light: :rotating_light:";
 			$text .= "\nProgram: ".$archive_id;
 
 			foreach($clips as $clip) {

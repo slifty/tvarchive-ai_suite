@@ -1,7 +1,5 @@
 config.php
 *.mp4
-*.jpg
-*.jpeg
 *.csv
 *.txt
 out.list
