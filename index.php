@@ -24,6 +24,9 @@
 		DataLoader::loadDetector("datasets/detectors/mcconnell/detector.json", $matroid);
 		DataLoader::loadDetector("datasets/detectors/ryan/detector.json", $matroid);
 		DataLoader::loadDetector("datasets/detectors/schumer/detector.json", $matroid);
+		DataLoader::loadDetector("datasets/detectors/obama/detector.json", $matroid);
+		DataLoader::loadDetector("datasets/detectors/mccain/detector.json", $matroid);
+		DataLoader::loadDetector("datasets/detectors/trump_jr/detector.json", $matroid);
 		$matroid->registerDetector();
 		$matroid->trainDetector();
 	}
