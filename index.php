@@ -3,7 +3,7 @@
 	define("ROOT", __DIR__ ."/");
 	include("includes/detectors/MatroidDetector.php");
 	include("includes/util/DataLoader.php");
-	
+
 
 	$fp = fopen('lock.txt', 'w+');
 	/* Activate the LOCK_NB option on an LOCK_EX operation */
@@ -24,6 +24,7 @@
 		DataLoader::loadDetector("datasets/detectors/mcconnell/detector.json", $matroid);
 		DataLoader::loadDetector("datasets/detectors/ryan/detector.json", $matroid);
 		DataLoader::loadDetector("datasets/detectors/schumer/detector.json", $matroid);
+		DataLoader::loadDetector("datasets/detectors/mario/detector.json", $matroid);
 		DataLoader::loadDetector("datasets/detectors/obama/detector.json", $matroid);
 		DataLoader::loadDetector("datasets/detectors/mccain/detector.json", $matroid);
 		DataLoader::loadDetector("datasets/detectors/trump_jr/detector.json", $matroid);
