@@ -25,6 +25,15 @@
 		DataLoader::loadDetector("datasets/detectors/ryan/detector.json", $matroid);
 		DataLoader::loadDetector("datasets/detectors/schumer/detector.json", $matroid);
 		DataLoader::loadDetector("datasets/detectors/mario/detector.json", $matroid);
+		DataLoader::loadDetector("datasets/detectors/obama/detector.json", $matroid);
+		DataLoader::loadDetector("datasets/detectors/mccain/detector.json", $matroid);
+		DataLoader::loadDetector("datasets/detectors/trump_jr/detector.json", $matroid);
+		DataLoader::loadDetector("datasets/detectors/carter/detector.json", $matroid);
+		DataLoader::loadDetector("datasets/detectors/romney/detector.json", $matroid);
+		DataLoader::loadDetector("datasets/detectors/clinton_bill/detector.json", $matroid);
+		DataLoader::loadDetector("datasets/detectors/clinton_hillary/detector.json", $matroid);
+		DataLoader::loadDetector("datasets/detectors/bush_w/detector.json", $matroid);
+		DataLoader::loadDetector("datasets/detectors/bush_hw/detector.json", $matroid);
 		$matroid->registerDetector();
 		$matroid->trainDetector();
 	}
